@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>tittandtill4thmonthversarry</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* =====================================================
+   HAPPY 2ND MONTHSARY
+   PIN CARD SAJA + PAGE TRANSPARAN
+===================================================== */
+
+:root {
+  --pink: #f8c9d9;
+  --pink-dark: #c87599;
+  --pink-light: #fff7fb;
+  --text: #704b5d;
+  --border: #f3c3d5;
+}
+
+/* ================= RESET ================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f6d9e5;
+  font-family: 'Fredoka', sans-serif;
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+/* ================= BACKGROUND ================= */
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  background:
+    linear-gradient(
+      rgba(255, 239, 248, .72),
+      rgba(255, 239, 248, .72)
+    ),
+    url("background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* ================= CONTAINER ================= */
+
+/* TIDAK ADA CARD DI SINI */
+.phone {
+  width: 100%;
+  max-width: 360px;
+  min-height: 500px;
+
+  background: transparent;
+
+  border: none;
+  border-radius: 0;
+
+  overflow: hidden;
+  position: relative;
+
+  box-shadow: none;
+}
+
+/* ================= HALAMAN ================= */
+
+.page {
+  display: none;
+
+  width: 100%;
+  min-height: 500px;
+
+  padding: 14px 18px;
+
+  text-align: center;
+  position: relative;
+
+  animation: fade .45s ease;
+}
+
+.page.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+/* ================= PAGE 1 = CARD PIN ================= */
+
+/* HANYA PAGE PIN YANG ADA CARD */
+#page1 {
+  background: rgba(255, 247, 251, .94);
+
+  border: 3px solid var(--border);
+  border-radius: 28px;
+
+  height: 500px;
+  min-height: 500px;
+
+  box-shadow:
+    0 15px 45px rgba(170, 90, 120, .15);
+}
+
+/* ================= PAGE SELANJUTNYA ================= */
+
+/* PAGE 2-8 TRANSPARAN */
+#page2,
+#page3,
+#page4,
+#page5,
+#page6,
+#page7,
+#page8 {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* ================= ANIMASI PAGE ================= */
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= HIASAN BACKGROUND ================= */
+
+.bg {
+  position: fixed;
+  inset: 0;
+
+  pointer-events: none;
+  overflow: hidden;
+
+  opacity: .7;
+}
+
+.bg span {
+  position: absolute;
+
+  color: #f4c5d8;
+  font-size: 24px;
+
+  animation: float 5s ease-in-out infinite;
+}
+
+.bg span:nth-child(1) {
+  top: 8%;
+  left: 8%;
+}
+
+.bg span:nth-child(2) {
+  top: 20%;
+  right: 8%;
+  animation-delay: 1s;
+}
+
+.bg span:nth-child(3) {
+  top: 45%;
+  left: 5%;
+  animation-delay: 2s;
+}
+
+.bg span:nth-child(4) {
+  top: 60%;
+  right: 5%;
+  animation-delay: .5s;
+}
+
+.bg span:nth-child(5) {
+  bottom: 10%;
+  left: 12%;
+  animation-delay: 1.5s;
+}
+
+.bg span:nth-child(6) {
+  bottom: 18%;
+  right: 15%;
+  animation-delay: 2.5s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(-5deg);
+  }
+
+  50% {
+    transform: translateY(-12px) rotate(5deg);
+  }
+}
+
+/* ================= TEKS ================= */
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 26px;
+  line-height: 1.15;
+  color: var(--pink-dark);
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.small {
+  font-size: 13px;
+  opacity: .75;
+}
+
+/* ================= FOTO ================= */
+
+.photo {
+  width: 100%;
+  height: 125px;
+
+  object-fit: cover;
+
+  border-radius: 18px;
+  border: 4px solid white;
+
+  box-shadow:
+    0 8px 20px rgba(190, 110, 140, .12);
+
+  margin-bottom: 10px;
+}
+
+.character {
+  width: 150px;
+  height: 150px;
+
+  object-fit: contain;
+
+  margin: 10px auto;
+
+  display: block;
+}
+
+/* ================= BUTTON ================= */
+
+.btn {
+  background: #f8c5d8;
+  color: #9b5d79;
+
+  border: 2px solid #efb3ca;
+  border-radius: 30px;
+
+  padding: 10px 20px;
+
+  font-family: 'Fredoka', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+
+  box-shadow:
+    0 5px 12px rgba(190, 110, 140, .1);
+
+  transition: .2s;
+  margin: 4px;
+
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  background: #f4b7ce;
+}
+
+.btn:active {
+  transform: scale(.96);
+}
+
+.btn.white {
+  background: white;
+  border-color: #f3d1df;
+}
+
+/* ================= PASSWORD ================= */
+
+.password-title {
+  margin-top: 2px;
+}
+
+.password-title h1 {
+  font-size: 23px;
+  line-height: 1.15;
+  margin-bottom: 6px;
+}
+
+.password-title p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+/* BULATAN PASSWORD */
+
+.pass-display {
+  font-size: 19px;
+  letter-spacing: 6px;
+
+  color: #d07c9e;
+
+  height: 25px;
+
+  margin: 4px 0 12px;
+}
+
+/* KEYPAD */
+
+.keypad {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 8px;
+
+  max-width: 300px;
+  margin: auto;
+}
+
+.key {
+  height: 43px;
+
+  border-radius: 13px;
+
+  background: #fff;
+  border: 2px solid #f4d5e1;
+
+  color: #9a637b;
+
+  font-family: 'Fredoka', sans-serif;
+  font-size: 18px;
+
+  box-shadow:
+    0 4px 8px rgba(180, 100, 130, .05);
+
+  transition: .15s;
+
+  cursor: pointer;
+}
+
+.key:hover {
+  background: #fff0f6;
+}
+
+.key:active {
+  transform: scale(.94);
+  background: #f8d4e2;
+}
+
+/* HINT */
+
+.hint {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #bd7c99;
+}
+
+/* ================= OPTIONS ================= */
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  gap: 6px;
+
+  margin-top: 14px;
+}
+
+.options .btn {
+  font-size: 13px;
+  padding: 10px 14px;
+}
+
+/* ================= MESSAGE ================= */
+
+.message-box {
+  background: rgba(255, 255, 255, .72);
+
+  border: 2px solid #f4d2df;
+  border-radius: 22px;
+
+  padding: 18px 16px;
+
+  text-align: left;
+
+  box-shadow:
+    0 8px 20px rgba(180, 100, 130, .06);
+
+  margin-top: 12px;
+
+  max-height: 310px;
+  overflow-y: auto;
+}
+
+.message-box p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.message-box p:last-child {
+  margin-bottom: 0;
+}
+
+/* ================= LOVE BERTERBANGAN ================= */
+
+.heart {
+  position: fixed;
+
+  bottom: -40px;
+  left: 0;
+
+  font-size: 20px;
+
+  pointer-events: none;
+  z-index: 999;
+
+  animation: loveFloat 5s ease-in forwards;
+
+  filter:
+    drop-shadow(0 3px 5px rgba(220, 120, 160, .15));
+}
+
+@keyframes loveFloat {
+
+  0% {
+    transform:
+      translateY(0)
+      translateX(0)
+      rotate(0deg)
+      scale(.5);
+
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+
+    transform:
+      translateY(-80px)
+      translateX(5px)
+      rotate(-10deg)
+      scale(1);
+  }
+
+  40% {
+    transform:
+      translateY(-280px)
+      translateX(-25px)
+      rotate(15deg)
+      scale(1.1);
+  }
+
+  70% {
+    transform:
+      translateY(-500px)
+      translateX(25px)
+      rotate(-15deg)
+      scale(.9);
+
+    opacity: .9;
+  }
+
+  100% {
+    transform:
+      translateY(-850px)
+      translateX(-10px)
+      rotate(25deg)
+      scale(.7);
+
+    opacity: 0;
+  }
+}
+
+/* ================= MUSIK ================= */
+
+.music-btn {
+  position: fixed;
+
+  bottom: 25px;
+  right: 25px;
+
+  width: 55px;
+  height: 55px;
+
+  border-radius: 50%;
+
+  background: #e89bb9;
+  color: white;
+
+  font-size: 23px;
+
+  z-index: 99;
+
+  box-shadow:
+    0 5px 20px rgba(200, 100, 140, .25);
+
+  display: none;
+  cursor: pointer;
+}
+
+.music-btn.show {
+  display: block;
+}
+
+.music-btn.playing {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 500px) {
+
+  .app {
+    padding: 0;
+  }
+
+  .phone {
+    width: 100%;
+    max-width: 360px;
+    min-height: 500px;
+  }
+
+  /* CARD PIN TETAP PENDEK */
+  #page1 {
+    height: 500px;
+    min-height: 500px;
+    border-radius: 28px;
+  }
+
+  /* PAGE LAIN TANPA CARD */
+  #page2,
+  #page3,
+  #page4,
+  #page5,
+  #page6,
+  #page7,
+  #page8 {
+    min-height: 500px;
+    padding: 14px 18px;
+  }
+
+  .photo {
+    height: 125px;
+  }
+
+  h1 {
+    font-size: 23px;
+  }
+
+  .message-box {
+    padding: 18px 16px;
+  }
+
+}
+
+/* ================= HP KECIL ================= */
+
+@media (max-width: 380px) {
+
+  .phone {
+    max-width: 340px;
+  }
+
+  #page1 {
+    height: 500px;
+    min-height: 500px;
+  }
+
+  .page {
+    padding: 12px 14px;
+  }
+
+  .photo {
+    height: 115px;
+  }
+
+  .keypad {
+    gap: 7px;
+  }
+
+  .key {
+    height: 40px;
+    font-size: 17px;
+  }
+
+}
+
+#page1 .photo {
+  display: block;
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+  margin: 10px auto 12px;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="app">
+<div class="phone">
+
+<!-- BACKGROUND HIASAN -->
+<div class="bg">
+  <span>♡</span>
+  <span>✦</span>
+  <span>♡</span>
+  <span>✧</span>
+  <span>♡</span>
+  <span>✦</span>
+</div>
+
+<!-- ================= PAGE 1 ================= -->
+<!-- SATU-SATUNYA PAGE YANG PAKAI CARD -->
+
+<section class="page active" id="page1">
+<div class="content">
+
+  <div class="password-title">
+    <h1>budokkk sayanggg <br>coba tebakk passwordnya!!</h1>
+    <p>kalo salah aku #MARAHH</p>
+  </div>
+
+  <img src="icon6.webp" class="photo" alt="Foto kita">
+
+  <div class="pass-display" id="passDisplay">♡♡♡♡</div>
+
+  <div class="keypad">
+    <button class="key" onclick="pressKey('1')">1</button>
+    <button class="key" onclick="pressKey('2')">2</button>
+    <button class="key" onclick="pressKey('3')">3</button>
+    <button class="key" onclick="pressKey('4')">4</button>
+    <button class="key" onclick="pressKey('5')">5</button>
+    <button class="key" onclick="pressKey('6')">6</button>
+    <button class="key" onclick="pressKey('7')">7</button>
+    <button class="key" onclick="pressKey('8')">8</button>
+    <button class="key" onclick="pressKey('9')">9</button>
+    <button class="key" onclick="pressKey('0')" style="grid-column:2">0</button>
+  </div>
+
+  <p class="hint">hint : our date xixi! 💗</p>
+
+</div>
+</section>
+
+<!-- ================= PAGE 2 ================= -->
+
+<section class="page" id="page2">
+<div class="content">
+
+  <img src="icon1.webp" class="character" alt="Karakter lucu">
+
+  <h1 style="color:#333;">cieee udah bisa<br>dibuka! 💗</h1>
+
+  <button class="btn" onclick="nextPage(3); startMusic();">
+    tap disinii &lt;3
+  </button>
+
+</div>
+</section>
+
+<!-- ================= PAGE 3 ================= -->
+
+<section class="page" id="page3">
+<div class="content">
+
+  <img src="icon2.webp" class="character" alt="Karakter lucu">
+
+  <h2>heyyoo my love sayanggg <br>udahh siapp belomm sama gebrakann bulan inii?🤪</h2>
+
+  <div class="options">
+    <button class="btn" onclick="nextPage(4)">
+      soOo excited!~&gt;^&lt;
+    </button>
+
+    <button class="btn white" onclick="tease()">
+      no no by, no no
+    </button>
+  </div>
+
+  <p class="small" id="teaseText"></p>
+
+</div>
+</section>
+
+<!-- ================= PAGE 4 ================= -->
+
+<section class="page" id="page4">
+<div class="content">
+
+
+  <img src="icon3.webp" class="character" alt="Karakter lucu">
+
+  <h2>yeayy terimakasih<br>sudah menjawab!!!</h2>
+
+  <p>last one i made something<br>for u sayang, siap yaaa ..</p>
+
+  <button class="btn" onclick="nextPage(5)">
+    oteiii sayanggg
+  </button>
+
+</div>
+</section>
+
+<!-- ================= PAGE 5 ================= -->
+
+<section class="page" id="page5">
+<div class="content">
+
+  
+  <img src="icon4.webp" class="character" alt="Karakter lucu">
+
+  <h1>happy 4th monthversarryy my lovee<br>budokk sayanggg!</h1>
+
+  <p>i love youu yesterday, today, tomorrow and forever. 
+mwah mwah mwahh</p>
+
+  <button class="btn" onclick="nextPage(6)">
+    next surprise ❤️
+  </button>
+
+</div>
+</section>
+
+<!-- ================= PAGE 6 ================= -->
+
+<section class="page" id="page6">
+<div class="content">
+
+  <h1 style="font-family:'Fredoka'; color:#c87599;">
+    Happy 4th<br>Monthversarryy My Lovee
+  </h1>
+
+  <div class="message-box">
+
+    <p><b>welcomee backk, my lovee budok sayanggg💗</b></p>
+
+ <p>
+sayangg tauga? tanggal 01 itu bener2 full of happiness buat aku. selain tanggal gajian ini jga tanggal bersejarah atas tercetusnya titt and till couplee, aliass hari peresmiann hubungan kita (asoyyy)😚
+</p>
+
+<p>
+jujurrr aku tiap hari jg udah yapping abiez sih sayangg. sayang jg udah bosenn dengerinnya. udah muakkkk. YAKHAN YAKHANNNN!
+</p>
+
+<p>
+tapi sayangg, ada alasan kenapa aku ttp suka bikin love letter sprti ini. antara lain sebagai berikut:
+</p>
+
+<p>
+1. budokk sayangg itu paling gabisa diromantisin. lngsung alergi dan secara sadarr menghujatt akuuu! DASARRR NYEBELINNNN -_-
+</p>
+
+<p>
+2. beberapa hal aku gbsa bilang secara verbal. kya lebih indah kalo ditulis aja dan dibaca sama budok sayangg pake hati terdalamm
+</p>
+
+<p>
+3. budokk spesial buat aku. hubungan kita pnting buat aku. sehingga semua-muanya harus ada arsipnya. biar kapan aja kita bsa buka lagi dan bareng² menghujat ke alay an aku ini
+</p>
+
+<p>
+my lovee sayangg, happy 4th monthversarry ya sayangg. heheh seruww bgtt kan hubungannya, sampe ga kerasa udah mau ngalahin jepang menduduki indo. for me, jdi kesayangan budok itu bener² bikin bahagia. budokk lucuu, gemesinn, pinterrr, cantikk, bijakk, meskipun NYEBELINN BANGETT KAYA WOWO. ngejalanin hari demi hari, minggu demi minggu, bulan demi bulan sama budok tu selalu seruu. meskipun kita selalu sibuk dengan aktivitas masing-masing, tpi kita gaperna lupa satu sama lain. itu yang aku suka dari budok. budok selalu masukin aku ke rutinitas sayangg, sehingga sayang selalu keinget aku meskipun lagii sibukk bgtt dan banyak ujiannn. that's whyy aku tiap hari kangen terus sama budokk. pokonya kangenn dan mau living togetherr.
+</p>
+
+<p>
+sayangg, aku seneng tauu budok skrg selalu bicarain apapun ke aku. aku seneng budok ngerasa nyaman ngobrol sama aku. aku senengg budok ngerasa cerita sama akutu aman. gaperlu ada yng ditutup²in, gaperlu ada yang disembunyi²in. buat aku, kepercayaan sprti ini mahall bgt sayanggg😭
+</p>
+
+<p>
+pokonya budokk, budok harus selalu tau kalo aku akan selalu dukung budok mau gmn pun kondisinya. kalo hari budok buruk, ga menyenangkan, bilang aku ya sayangg. aku siapp dengerin apapunn. jgn cuma sharing hal² seru sama aku sayangg, tp hal² yng kurng enakk jg selalu bsa kita bahas yaa. semoga kita selalu punya alasan untuk jatuh cinta tiapp hari ya sayangg, biar org luar gaada akses sekecil apapun buat ikut campur hubungan kita.
+</p>
+
+<p>
+aku mau bahagia dan living together sama sayang di cluster malibu. jadi budok harus kerja keras ya! SEMANGATT KESAYANGANN AKU CINTAKU DUNIAKU CANTIKUUU MWAH MWAHH😚💗💗
+</p>
+
+<p>
+anyway sayangg, terimaacii untuk bunganya hari ini. hahah aku nangis beneran pas ngetik bagian ini. aku sebelll, karena budok selalu ngelakuin hal-hal yang aku sukaa. budok sukses bikin aku jatuh cinta berkali-kali sama budokk. budok selalu dengerin aku. budok tau apa yang aku mauu. terimakasii sayangg udah hadir di hidupp aku. jangan kemana mana plis, aku udah kena pelet budokk. aku gamau ditinggallll!🥹😡😡
+</p>
+
+<p style="text-align:center; margin-top:25px;">
+  — dari orang yang paling sering kangen kamu ♡
+</p>
+  </div>
+
+  <button class="btn" onclick="nextPage(7)">
+    next surprise 💗
+  </button>
+
+</div>
+</section>
+
+<!-- ================= PAGE 7 ================= -->
+
+<section class="page" id="page7">
+<div class="content">
+
+
+  <img src="icon5.webp" class="character" alt="Karakter lucu">
+
+  <h1>once again,<br> heppyy mensipp cintakuu sayangg😙</h1>
+
+  <p>
+    semoga kita akur terus dan ketawa ketiwi teyuss ya sayangg. budok harus sayangg aku karena aku lebih cinta budok. budok juga harus selalu kangen aku, karena aku KANGENN BANGETT SAMA BUDOKKK. dan inget sayanggg, aku mengalir di seluruh pembuluh darah budok, jadi kurir oksigen buat mastiin budok bernafas dengan oksigen paling berkualitas di muka bumi inii🥰.
+  </p>
+
+  <button class="btn" onclick="nextPage(8)">
+    last one ♡
+  </button>
+
+</div>
+</section>
+
+<!-- ================= PAGE 8 ================= -->
+
+<section class="page" id="page8">
+<div class="content">
+
+
+  <img src="icon7.webp" class="character" alt="Karakter lucu">
+
+  <h1>i loveee youuuu sooo muchhh my lovee sayanggg <br>now and always!</h1>
+  <p style="font-size:18px;">
+    happy 4th monthversarryy, dokterr kesayangann akuuu💗
+  </p>
+
+  <p>
+    gasabarrr mau 3c😍
+  </p>
+
+  <button class="btn" onclick="location.reload()">
+    replay ♡
+  </button>
+
+</div>
+</section>
+
+</div>
+</div>
+
+<!-- ================= MUSIK ================= -->
+
+<audio id="music" loop>
+  <source src="musik.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" id="musicBtn" onclick="toggleMusic()">♪</button>
+
+<script>
+let currentPage = 1;
+let password = "";
+
+/* GANTI PASSWORD DI SINI */
+const correctPassword = "0106";
+
+const music = document.getElementById("music");
+const musicBtn = document.getElementById("musicBtn");
+
+/* ================= PINDAH HALAMAN ================= */
+
+function nextPage(page) {
+  document.querySelectorAll(".page").forEach(p => {
+    p.classList.remove("active");
+  });
+
+  document.getElementById("page" + page).classList.add("active");
+  currentPage = page;
+
+  if (page > 1) {
+    musicBtn.classList.add("show");
+  }
+
+  window.scrollTo(0, 0);
+
+  if (page === 2 || page === 4 || page === 5 || page === 7 || page === 8) {
+    createHearts();
+  }
+}
+
+/* ================= PASSWORD ================= */
+
+function pressKey(num) {
+  if (password.length >= 4) return;
+
+  password += num;
+
+  document.getElementById("passDisplay").textContent =
+    "●".repeat(password.length) +
+    "♡".repeat(4 - password.length);
+
+  if (password.length === 4) {
+    setTimeout(() => {
+      if (password === correctPassword) {
+        nextPage(2);
+        createHearts();
+      } else {
+        alert("salahh ayang 😭 coba lagi yaa!");
+        password = "";
+        document.getElementById("passDisplay").textContent = "♡♡♡♡";
+      }
+    }, 300);
+  }
+}
+
+/* ================= MUSIK ================= */
+
+function startMusic() {
+  music.play().then(() => {
+    musicBtn.classList.add("playing");
+  }).catch(() => {
+    console.log("Autoplay diblokir browser.");
+  });
+}
+
+function toggleMusic() {
+  if (music.paused) {
+    startMusic();
+  } else {
+    music.pause();
+    musicBtn.classList.remove("playing");
+  }
+}
+
+/* Coba nyalakan musik otomatis saat halaman dibuka */
+window.addEventListener("load", () => {
+  music.volume = 0.7;
+  startMusic();
+});
+
+/* Jika autoplay diblokir, musik menyala setelah pengguna menyentuh halaman */
+document.addEventListener("click", () => {
+  if (music.paused) {
+    startMusic();
+  }
+}, { once: true });
+
+document.addEventListener("touchstart", () => {
+  if (music.paused) {
+    startMusic();
+  }
+}, { once: true });
+
+/* ================= TOMBOL ISENG ================= */
+
+function tease() {
+  document.getElementById("teaseText").textContent =
+    "ish, iseng mulu 😤 tap yang excited sekarang jugaa!";
+}
+
+/* ================= LOVE BERTERBANGAN ================= */
+
+function createHearts() {
+  const hearts = ["💗", "♥︎", "♡", "♡"];
+
+  for (let i = 0; i < 18; i++) {
+    setTimeout(() => {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+
+      heart.textContent =
+        hearts[Math.floor(Math.random() * hearts.length)];
+
+      heart.style.left = (Math.random() * 100) + "vw";
+
+      heart.style.fontSize =
+        (14 + Math.random() * 16) + "px";
+
+      heart.style.animationDuration =
+        (4 + Math.random() * 3) + "s";
+
+      heart.style.animationDelay =
+        (Math.random() * .5) + "s";
+
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 8000);
+
+    }, i * 180);
+  }
+}
+
+/* LOVE MUNCUL LAGI SETIAP BEBERAPA DETIK */
+
+setInterval(() => {
+  if (currentPage > 1) {
+    createHearts();
+  }
+}, 9000);
+</script>
+
+</body>
+</html>
